@@ -12,7 +12,8 @@ import Orders from './pages/Orders';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
-import { ToastContainer, toast } from 'react-toastify';
+import ScrollToTop from './components/ScrollToTop'; // ⬅️ novo import
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Verify from './pages/Verify';
 
@@ -22,6 +23,7 @@ const App = () => {
       <ToastContainer />
       <Navbar />
       <SearchBar />
+      <ScrollToTop /> {/* ⬅️ Aqui */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/collection' element={<Collection />} />
